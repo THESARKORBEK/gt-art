@@ -43,5 +43,58 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             alert('This is your first visit!');
         }
+
+        // Access the camera and take a photo
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
+                const video = document.createElement('video');
+                video.srcObject = stream;
+                video.play();
+
+                const button = document.createElement('button');
+                button.textContent = 'Take Photo';
+                document.body.appendChild(video);
+                document.body.appendChild(button);
+
+                button.addEventListener('click', () => {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    const context = canvas.getContext('2d');
+                    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                    
+                    // Save the photo to local storage
+                    const dataURL = canvas.toDataURL('image/png');
+                    localStorage.setItem('userPhoto', dataURL);
+
+                    // Stop the camera
+                    stream.getTracks().forEach(track => track.stop());
+                    document.body.removeChild(video);
+                    document.body.removeChild(button);
+
+                    alert('Photo saved to local storage!');
+
+                    // Show button to display the photo
+                    const showPhotoButton = document.createElement('button');
+                    showPhotoButton.textContent = 'Show Photo';
+                    document.body.appendChild(showPhotoButton);
+
+                    showPhotoButton.addEventListener('click', () => {
+                        const userPhoto = localStorage.getItem('userPhoto');
+                        if (userPhoto) {
+                            const photoWindow = window.open('');
+                            photoWindow.document.write(`<img src="${userPhoto}" alt="User Photo">`);
+                        } else {
+                            alert('No photo found in local storage.');
+                        }
+                    });
+                });
+            }).catch((error) => {
+                console.error('Error accessing the camera:', error);
+                alert('Unable to access the camera.');
+            });
+        } else {
+            alert('Camera not supported.');
+        }
     });
 });
