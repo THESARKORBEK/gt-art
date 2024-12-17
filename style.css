@@ -171,7 +171,7 @@ header{
     .navbar-nav a {
         font-size: 0.8rem; /* Increased font size */
         padding: 0.3rem 0.7rem; /* More padding for wider clickable area */
-        letter-spacing: 0; /* Remove letter-spacing for a cramped look */
+        letter-spacing: 1px; /* Remove letter-spacing for a cramped look */
         display: inline-block;
         text-transform: none; /* Keep text as is for unpredictability */
         transition: none; /* Remove hover effects for chaos */
