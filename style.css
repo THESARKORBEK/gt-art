@@ -126,10 +126,10 @@ header{
 
 }
 .banner .search-input{
-    font-size: large;
+    font-size:medium;
     border: none;
     outline: none;
-    font-family: var(--Roboto);
+    font-family: var(--Doto);
   
     
 }
@@ -187,7 +187,7 @@ header{
 
     /* Logo styling */
     .navigation .logo a {
-        font-size: 30px; /* Smaller logo */
+        font-size: 37px; /* Smaller logo */
         padding: 3px;
         letter-spacing: 1px;
         text-transform: uppercase; /* Adding uppercase letters for disorganization */
@@ -202,7 +202,7 @@ header{
     /* Adjusting spacing for chaotic look */
     .navigation .logo a,
     .navbar-nav a {
-        margin-bottom: 2px; /* Extra space between items */
+        margin-bottom: 5px; /* Extra space between items */
     }
 
     /* Ensure the navbar looks disorganized */
