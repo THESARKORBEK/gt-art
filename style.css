@@ -169,8 +169,8 @@ header{
     }
 
     .navbar-nav a {
-        font-size: 1.1rem; /* Increased font size */
-        padding: 0.3rem 0.7rem; /* More padding for wider clickable area */
+        font-size: 0.7rem; /* Increased font size */
+        padding: 0.2rem 0.5rem; /* More padding for wider clickable area */
         letter-spacing: 1px; /* Remove letter-spacing for a cramped look */
         display: inline-block;
         text-transform: none; /* Keep text as is for unpredictability */
