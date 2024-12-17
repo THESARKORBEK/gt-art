@@ -185,7 +185,7 @@ header{
     /* Logo styling */
     .navigation .logo a {
         font-size: 30px; /* Smaller logo */
-        padding: 6px;
+        padding: 3px;
         letter-spacing: 2px;
         text-transform: uppercase; /* Adding uppercase letters for disorganization */
     }
@@ -199,7 +199,7 @@ header{
     /* Adjusting spacing for chaotic look */
     .navigation .logo a,
     .navbar-nav a {
-        margin-bottom: 5px; /* Extra space between items */
+        margin-bottom: 2px; /* Extra space between items */
     }
 
     /* Ensure the navbar looks disorganized */
