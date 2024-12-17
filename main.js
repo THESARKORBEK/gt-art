@@ -51,18 +51,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 video.srcObject = stream;
                 video.play();
 
-                const button = document.createElement('button');
-                button.textContent = 'Take Photo';
+                const takePhotoButton = document.createElement('button');
+                takePhotoButton.textContent = 'Take Photo';
                 document.body.appendChild(video);
-                document.body.appendChild(button);
+                document.body.appendChild(takePhotoButton);
 
-                button.addEventListener('click', () => {
+                takePhotoButton.addEventListener('click', () => {
                     const canvas = document.createElement('canvas');
                     canvas.width = video.videoWidth;
                     canvas.height = video.videoHeight;
                     const context = canvas.getContext('2d');
                     context.drawImage(video, 0, 0, canvas.width, canvas.height);
-                    
+
                     // Save the photo to local storage
                     const dataURL = canvas.toDataURL('image/png');
                     localStorage.setItem('userPhoto', dataURL);
@@ -70,9 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     // Stop the camera
                     stream.getTracks().forEach(track => track.stop());
                     document.body.removeChild(video);
-                    document.body.removeChild(button);
-
-                    alert('Photo saved to local storage!');
+                    document.body.removeChild(takePhotoButton);
 
                     // Show button to display the photo
                     const showPhotoButton = document.createElement('button');
@@ -88,6 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             alert('No photo found in local storage.');
                         }
                     });
+
+                    alert('Photo saved to local storage!');
                 });
             }).catch((error) => {
                 console.error('Error accessing the camera:', error);
