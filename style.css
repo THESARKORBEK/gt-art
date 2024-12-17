@@ -159,18 +159,18 @@ header{
 
     /* For the entire navbar */
     .navbar {
-        padding: 0.3rem 0.2rem;
+        padding: 0.2rem 0.1rem;
         background: rgba(0,0,0,0.9); /* Darker background */
     }
 
     .navbar-nav {
-        padding: 0.3rem 0 0.2rem 0;
+        padding: 0.2rem 0 0.1rem 0;
         text-align: center; /* Let's center the nav items, creating chaos */
     }
 
     .navbar-nav a {
-        font-size: 1.2rem; /* Increased font size */
-        padding: 0.5rem 1.5rem; /* More padding for wider clickable area */
+        font-size: 0.8rem; /* Increased font size */
+        padding: 0.3rem 0.7rem; /* More padding for wider clickable area */
         letter-spacing: 0; /* Remove letter-spacing for a cramped look */
         display: inline-block;
         text-transform: none; /* Keep text as is for unpredictability */
@@ -187,9 +187,9 @@ header{
 
     /* Logo styling */
     .navigation .logo a {
-        font-size: 30px; /* Smaller logo */
+        font-size: 20px; /* Smaller logo */
         padding: 3px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-transform: uppercase; /* Adding uppercase letters for disorganization */
     }
 
