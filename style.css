@@ -121,7 +121,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 1.1rem;
-    width: 89%;
+    width: 100%;
     margin: 0 auto;
 
 }
@@ -187,7 +187,7 @@ header{
 
     /* Logo styling */
     .navigation .logo a {
-        font-size: 20px; /* Smaller logo */
+        font-size: 30px; /* Smaller logo */
         padding: 3px;
         letter-spacing: 1px;
         text-transform: uppercase; /* Adding uppercase letters for disorganization */
