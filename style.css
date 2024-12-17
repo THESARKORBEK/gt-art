@@ -156,12 +156,12 @@ header{
 
     /* For the entire navbar */
     .navbar {
-        padding: 0.5rem 0.2rem;
+        padding: 0.3rem 0.2rem;
         background: rgba(0,0,0,0.9); /* Darker background */
     }
 
     .navbar-nav {
-        padding: 0.5rem 0 0.5rem 0;
+        padding: 0.3rem 0 0.2rem 0;
         text-align: center; /* Let's center the nav items, creating chaos */
     }
 
