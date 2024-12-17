@@ -155,10 +155,11 @@ header{
 }
 /* Media queries for iPhone 12 (width 390px) */
 /* Media query for mobile devices (like iPhone 12, with width 390px) */
-@media (max-width: 768px) {
+@media (max-width: 740px) {
 
     /* For the entire navbar */
     .navbar {
+       
         padding: 0.2rem 0.1rem;
         background: rgba(0,0,0,0.9); /* Darker background */
     }
@@ -183,6 +184,7 @@ header{
     /* Make the navigation items stack on top of each other vertically */
     .navbar-nav {
         display: block;
+        
         
 
     }
