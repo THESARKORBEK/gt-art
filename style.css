@@ -38,7 +38,7 @@ img{
 header{
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
-    background-image: url(./imgs/image.png);
+    background-image: url(./imgs/girl.png);
     background-position:  center;
     background-size: cover;
     overflow: hidden;
@@ -49,13 +49,16 @@ header{
 }
 
 .navbar{
-    
-    background: rgba(0,0,0,0.6);
+    display:inline-block;
+    position: fixed;
+    background: rgba(0,0,0,0.7);
     padding: 1rem;
-    
+    width: 100%;
+    justify-content:space-between;
 }
 .navigation{
-    display: flex;
+   display:flex;;
+
     justify-content: space-between;
 }
 .navigation .logo a{
@@ -98,6 +101,8 @@ header{
     margin: 9%;
 }
 .banner-title{
+    margin-top: 15%;
+    
     font-size: 7rem;
     line-height: 1.2;
     color:rgb(177, 123, 123);
@@ -249,3 +254,21 @@ header{
     transition: 1s;
 }
 
+
+/* design section */
+
+.design{
+    padding: 4.5rem 0  ;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+        font-size: 2.4rem;
+        font-family: var(--Doto);
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
