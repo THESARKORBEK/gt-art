@@ -291,7 +291,6 @@ header{
     margin: 0;
 }
 .design-img{
-
     position: relative;
     
 }
@@ -299,7 +298,17 @@ header{
     position: absolute;
     content: "hello";
     top: 0;
+    
     left: 0;
     width: 100%;height: 100%;
-    background: rgba(0,0,0,1);
+    background: rgba(0,0,0,0.3);
+}
+.design-img img{
+    
+    transition: all 0.5s;
+   
+}
+.design-item:hover img{
+    transform: scale(1.2);
+  
 }
