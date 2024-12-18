@@ -280,3 +280,26 @@ header{
     text-transform: uppercase;
     padding: 0.6rem 0;
 }
+.design-conttent{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.design-item{
+    cursor: pointer;
+    margin: 0;
+}
+.design-img{
+
+    position: relative;
+    
+}
+.design-img::after{
+    position: absolute;
+    content: "hello";
+    top: 0;
+    left: 0;
+    width: 100%;height: 100%;
+    background: rgba(0,0,0,1);
+}
