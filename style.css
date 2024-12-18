@@ -183,6 +183,14 @@ header{
         transition: none; /* Remove hover effects for chaos */
         margin: 0.2rem; /* Small margins, so links are cramped together */
     }
+    .banner-title{
+        margin-top: 25%;
+        
+        font-size: 7rem;
+        line-height: 1.2;
+        color:rgb(177, 123, 123);
+        font-family: var(--Doto);
+    }
 
 
 
